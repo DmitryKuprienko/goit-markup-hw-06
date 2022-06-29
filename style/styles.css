@@ -411,6 +411,9 @@ p {
 
   color: var(--main-text-grey);
 }
+.social-footer {
+  margin-right: 93px;
+}
 .social .list {
   display: flex;
   margin-bottom: 30px;
@@ -699,7 +702,37 @@ p {
 .social-footer .item + .item {
   margin-left: 10px;
 }
+/* Підписка-subscription */
+.subscription {
+  display: flex;
+}
+.subscription-input {
+  min-width: 358px;
+  padding: 15px 16px;
 
+  border-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscription-btn {
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+
+  display: flex;
+  background-color: var(--acсent-color);
+  color: var(--main-light);
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.subscription-client {
+  fill: currentColor;
+  padding-left: 10px;
+}
 /* backdrop-main */
 .backdrop {
   position: fixed;
