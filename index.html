@@ -469,6 +469,57 @@
             <use href="./images/sprite.svg#shut"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <b>Оставьте свои данные, мы вам перезвоним</b>
+          <div class="modal-grup">
+            <label for="name" class="grup-name">Имя</label>
+            <input type="text" name="name" id="name" class="modal-input" />
+
+            <svg class="icon-from" width="18" height="18">
+              <use href="./images/sprite.svg#user"></use>
+            </svg>
+          </div>
+          <div class="modal-grup">
+            <label for="tel" class="grup-name">Телефон</label>
+            <input
+              type="tel"
+              name="phone_number"
+              id="tel"
+              class="modal-input"
+            />
+
+            <svg class="icon-from" width="18" height="18">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </div>
+          <div class="modal-grup">
+            <label for="email" class="grup-name">Почта</label>
+            <input type="email" name="email" id="email" class="modal-input" />
+
+            <svg class="icon-from" width="18" height="18">
+              <use href="./images/sprite.svg#maill"></use>
+            </svg>
+          </div>
+          <div class="modal-grup comment">
+            <label for="comment" class="grup-name">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+              class="modal-input textarea"
+            >
+            </textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+          </div>
+
+          <button type="submit" class="subscription-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

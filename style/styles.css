@@ -710,15 +710,24 @@ p {
   min-width: 358px;
   padding: 15px 16px;
 
-  border-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+
 .subscription-btn {
   min-width: 200px;
   height: 50px;
   margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8755;
 
   display: flex;
   background-color: var(--acсent-color);
@@ -754,20 +763,83 @@ p {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotatez(360deg);
 }
+.modal-grup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.modal-grup:focus-within > .icon-from,
+.modal-grup:hover > .icon-from,
+.modal-input:hover {
+  fill: var(--acсent-color);
+  border-color: var(--acсent-color);
+}
 
+.grup-name {
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon-from {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-30%);
+  display: inline-block;
+}
+.comment .modal-input {
+  height: 120px;
+  margin-bottom: 20px;
+}
+.modal-form {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.textarea {
+  resize: none;
+  padding: 0;
+  padding: 12px 16px;
+}
+.modal b {
+  display: inline-block;
+  padding-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+
+  letter-spacing: 0.03em;
+}
+.modal .subscription-btn {
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal-checkbox {
+  margin-bottom: 30px;
+}
 .modal {
   position: absolute;
 
   top: 50%;
   left: 50%;
+  flex-direction: column;
 
   display: flex;
   padding: 8px;
   min-width: 528px;
   min-height: 581px;
-  justify-content: flex-end;
 
   background-color: var(--main-light);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -777,7 +849,10 @@ p {
 }
 
 .modal-btn {
-  position: absolute;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  justify-content: center;
 
   border-radius: 50%;
   padding: 8px 10px;
@@ -788,5 +863,7 @@ p {
   width: 11px;
   height: 11px;
 
+  background-position: center;
+  background-size: cover;
   fill: currentColor;
 }
